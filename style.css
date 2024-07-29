@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: var(--White);
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile{
+    max-width: fit-content;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--Grey-800);
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 6rem;
+}
+
+.user-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+
+.user-location{
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--Green);
+    padding-top: 0.5rem;
+}
+
+.user-detail{
+    font-size: 0.88rem;
+    padding-top: 1.5rem;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link{
+    color: var(--White);
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--Grey-700);
+}
+
+.link:hover{
+    cursor: pointer;
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
